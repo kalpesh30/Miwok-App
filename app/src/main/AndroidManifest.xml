@@ -16,14 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Numbs"
-            android:label = "@string/category_numbers"/>
-        <activity android:name=".FMem"
-            android:label="@string/category_family"/>
-        <activity android:name=".Clrs"
-            android:label="@string/category_colors"/>
-        <activity android:name=".Phrs"
-            android:label="@string/category_phrases"></activity>
+        <activity
+            android:name=".Numbs"
+            android:label="@string/category_numbers" />
+        <activity
+            android:name=".FMem"
+            android:label="@string/category_family" />
+        <activity
+            android:name=".Clrs"
+            android:label="@string/category_colors" />
+        <activity
+            android:name=".Phrs"
+            android:label="@string/category_phrases" />
     </application>
 
 </manifest>
