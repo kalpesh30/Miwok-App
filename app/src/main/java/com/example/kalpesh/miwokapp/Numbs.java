@@ -33,16 +33,24 @@ public class Numbs extends AppCompatActivity {
         LinearLayout NumbsLayout = findViewById(R.id.NumbLayout) ;
         // Counter for text variables
 
-        int i = 0;
+        //int i = 0;
 
         // Loop setting the TextViews in the Numbs Activity
 
-        while(i<10) {
+        /* while(i<10) {
             TextView tv_one = new TextView(this);
             tv_one.setText(words.get(i));
             NumbsLayout.addView(tv_one);
             tv_one.setTextSize(28);
             i += 1 ;
+        } */
+
+        for(int i = 0 ; i<10 ; i++) {
+            TextView tv_one  = new TextView(this) ;
+            tv_one.setTextSize(28) ;
+            tv_one.setText(words.get(i)) ;
+            NumbsLayout.addView(tv_one) ;
+
         }
 
     }
