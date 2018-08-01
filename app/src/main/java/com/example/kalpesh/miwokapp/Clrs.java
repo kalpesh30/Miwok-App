@@ -14,14 +14,14 @@ public class Clrs extends AppCompatActivity {
         setContentView(R.layout.activity_colours);
 
         ArrayList<Word> word = new ArrayList<>() ;
-        word.add(new Word("red","weṭeṭṭi")) ;
-        word.add(new Word("green","chokokki")) ;
-        word.add(new Word("brown","takaakki")) ;
-        word.add(new Word("gray", "ṭopoppi")) ;
-        word.add(new Word("black","kululli")) ;
-        word.add(new Word("white","kelelli")) ;
-        word.add(new Word("dusty yellow","takaakki")) ;
-        word.add(new Word("mustard yellow","chiwiiṭә")) ;
+        word.add(new Word("red","weṭeṭṭi",R.drawable.color_red)) ;
+        word.add(new Word("green","chokokki",R.drawable.color_green)) ;
+        word.add(new Word("brown","takaakki",R.drawable.color_brown)) ;
+        word.add(new Word("gray", "ṭopoppi",R.drawable.color_gray)) ;
+        word.add(new Word("black","kululli",R.drawable.color_black)) ;
+        word.add(new Word("white","kelelli",R.drawable.color_white)) ;
+        word.add(new Word("dusty yellow","takaakki",R.drawable.color_dusty_yellow)) ;
+        word.add(new Word("mustard yellow","chiwiiṭә",R.drawable.color_mustard_yellow)) ;
 
         WordAdapter wdAdapter = new WordAdapter(this,word) ;
         ListView listView = findViewById(R.id.lv_clr) ;
