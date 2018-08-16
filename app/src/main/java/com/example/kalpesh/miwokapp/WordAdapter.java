@@ -26,6 +26,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
         if(listItemView == null)
             listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item,parent,false) ;
         Word word = getItem(position) ;
+
         // Displaying Miwok Word
         TextView tvMiwok = (TextView)  listItemView.findViewById(R.id.tv_Miw) ;
         tvMiwok.setText(word.getMiwok()) ;
@@ -34,7 +35,14 @@ public class WordAdapter extends ArrayAdapter<Word> {
         tvEng.setText(word.getDef_eng());
 
         ImageView imgView = (ImageView) listItemView.findViewById(R.id.iv_Sym) ;
-        imgView.setImageResource(word.getImageResource());
+
+        if(word.getImageResource() != 0) {
+            imgView.setVisibility(View.VISIBLE);
+            imgView.setImageResource(word.getImageResource());
+        }
+        else{
+            imgView.setVisibility(View.INVISIBLE);
+        }
 
         return listItemView;
 

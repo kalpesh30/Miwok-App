@@ -24,7 +24,7 @@ public class Phrs extends AppCompatActivity {
         word.add(new Word("Let’s go.","yoowutis")) ;
         word.add(new Word("Come here.","әnni'nem"));
 
-        WordAdapterWithoutImgView wdadapter = new WordAdapterWithoutImgView(this,word) ;
+        WordAdapter wdadapter = new WordAdapter(this,word) ;
         ListView listview = findViewById(R.id.ph_list) ;
         listview.setAdapter(wdadapter) ;
 
