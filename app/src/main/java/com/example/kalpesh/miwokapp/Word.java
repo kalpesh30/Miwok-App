@@ -5,6 +5,11 @@ public class Word {
     private String miwok;
     private int imageResource;
 
+    Word(String st1, String st2){
+        def_eng = st1 ;
+        miwok = st2 ;
+    }
+
     Word(String st1,String st2,int imageResourceid ) {
         def_eng = st1;
         miwok = st2;
