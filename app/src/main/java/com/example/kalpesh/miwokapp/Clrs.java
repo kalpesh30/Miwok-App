@@ -23,7 +23,7 @@ public class Clrs extends AppCompatActivity {
         word.add(new Word("dusty yellow","takaakki",R.drawable.color_dusty_yellow)) ;
         word.add(new Word("mustard yellow","chiwiiṭә",R.drawable.color_mustard_yellow)) ;
 
-        WordAdapter wdAdapter = new WordAdapter(this,word) ;
+        WordAdapter wdAdapter = new WordAdapter(this,word,R.color.category_colors) ;
         ListView listView = findViewById(R.id.lv_clr) ;
         listView.setAdapter(wdAdapter);
     }

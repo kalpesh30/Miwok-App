@@ -1,38 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:paddingLeft="16dp"
-    android:paddingTop="16dp"
-    android:orientation="horizontal"
-    android:paddingStart="16dp">
+    android:orientation="horizontal">
 
     <ImageView
         android:id="@+id/iv_Sym"
-        android:layout_width="15dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:gravity="center"
+        android:layout_width="@dimen/img_view_side"
+        android:layout_height="@dimen/img_view_side"
         app:srcCompat="@mipmap/ic_launcher" />
 
-    <TextView
-        android:id="@+id/tv_Miw"
-        android:layout_width="wrap_content"
-        android:layout_height="72dp"
-        android:layout_weight="1.5"
-        android:gravity="center"
-        android:textAlignment="center"
-        tools:text="Hello" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/ll_translation"
+        android:layout_height="@dimen/list_item_height">
 
-    <TextView
-        android:id="@+id/tv_Eng"
-        android:layout_width="wrap_content"
-        android:layout_height="73dp"
-        android:layout_weight="1.5"
-        android:textAlignment="center"
-        android:gravity="center"
-        tools:text="hello" />
+        <TextView
+            android:id="@+id/tv_Miw"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_height"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:textAlignment="center"
+            tools:text="Hello" />
+
+        <TextView
+            android:id="@+id/tv_Eng"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_height"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:textAlignment="center"
+            tools:text="hello" />
+    </LinearLayout>
 
 </LinearLayout>

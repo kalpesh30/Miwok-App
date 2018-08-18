@@ -26,7 +26,8 @@ public class FMem extends AppCompatActivity {
         word.add(new Word("grandmother","ama",R.drawable.family_grandmother)) ;
         word.add(new Word("grandfather","paapa",R.drawable.family_grandfather)) ;
 
-        WordAdapter wdAdapter = new WordAdapter(this,word) ;
+        WordAdapter wdAdapter = new WordAdapter(this,word,R.color.category_family) ;
+        //wdAdapter.setListItemColorId(R.string.category_family);
         ListView listView = findViewById(R.id.lv_fmly) ;
         listView.setAdapter(wdAdapter) ;
 

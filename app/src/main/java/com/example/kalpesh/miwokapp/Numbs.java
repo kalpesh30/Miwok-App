@@ -48,10 +48,8 @@ public class Numbs extends AppCompatActivity {
             i += 1 ;
         } */
 
-        WordAdapter itemsAdapter = new WordAdapter(this,words) ;
-        //ListView listView = findViewById(R.id.list) ;
-        //listView.setAdapter(itemsAdapter) ;
-        ListView listView = findViewById(R.id.list) ;
+        WordAdapter itemsAdapter = new WordAdapter(this,words,R.color.category_numbers) ;
+        ListView listView = findViewById(R.id.list_numbers) ;
         listView.setAdapter(itemsAdapter);
     }
 }

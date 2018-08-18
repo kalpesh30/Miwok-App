@@ -14,9 +14,15 @@ import java.util.ArrayList;
 
 public class WordAdapter extends ArrayAdapter<Word> {
 
+    private int listItemColorId;
 
-    public WordAdapter(@NonNull Context context,@NonNull ArrayList<Word> objects) {
+    public void setListItemColorId(int listItemColorId) {
+        this.listItemColorId = listItemColorId;
+    }
+
+    public WordAdapter(@NonNull Context context,@NonNull ArrayList<Word> objects,int colorId) {
         super(context,0, objects);
+        this.listItemColorId = colorId ;
     }
 
     @NonNull
@@ -43,6 +49,9 @@ public class WordAdapter extends ArrayAdapter<Word> {
         else{
             imgView.setVisibility(View.GONE);
         }
+
+        View listview = listItemView.findViewById(R.id.ll_translation) ;
+        listview.setBackgroundColor(listItemColorId);
 
         return listItemView;
 
